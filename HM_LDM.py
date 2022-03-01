@@ -70,7 +70,7 @@ class HM_LDM(nn.Module):
     
     def sample_network(self):
         '''
-        Network Sampling procecdure used for large scale networks
+        Network Sampling procedure to be used for large scale networks
         '''
         # USE torch_sparse lib i.e. : from torch_sparse import spspmm
 
@@ -97,7 +97,7 @@ class HM_LDM(nn.Module):
         
     
     
-    #introduce the likelihood function containing the two extra biases gamma_i and alpha_j
+    
     def LSM_likelihood_bias(self,epoch):
         '''
         Poisson log-likelihood ignoring the log(k!) constant
