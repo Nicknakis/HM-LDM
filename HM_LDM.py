@@ -1,5 +1,4 @@
 
-# -*- coding: utf-8 -*-
 """
 Created on Mon Mar 22 15:05:57 2021
 
@@ -12,13 +11,11 @@ import torch.nn as nn
 import numpy as np
 import torch.optim as optim
 import matplotlib.pyplot as plt
-import timeit
 from sklearn import metrics
 
 from torch_sparse import spspmm
 
 
-start = timeit.default_timer()
 CUDA = torch.cuda.is_available()
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
