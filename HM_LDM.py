@@ -25,11 +25,7 @@ if CUDA:
 else:
     torch.set_default_tensor_type('torch.FloatTensor')
  
-    
-    
-undirected=1
 
-    
 
 
 class HM_LDM(nn.Module):
