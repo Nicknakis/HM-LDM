@@ -36,7 +36,7 @@ optional arguments:
 
 **--LP**   &emsp;     performs link prediction (default: True)
 
-**--D**   &emsp;      dimensionality of the embeddings (default: 2)
+**--D**   &emsp;      dimensionality of the embeddings (default: 8)
 
 **--lr**   &emsp;     learning rate for the ADAM optimizer (default: 0.1)
 
