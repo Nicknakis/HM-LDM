@@ -16,7 +16,7 @@ A central aim of modeling complex networks is to accurately embed networks in or
 
 | <img src="https://github.com/Nicknakis/Hybrib-Membership-Latent-Distance-Model/blob/main/images/drug_gene_1.jpeg?raw=true"  alt="drawing"  width="220"  />   | <img src="https://github.com/Nicknakis/Hybrib-Membership-Latent-Distance-Model/blob/main/images/l2_drug_gene_1.jpeg?raw=true"  alt="drawing"  width="220"  />  |
 |:---:|:---:|
-| Drug-Gene (p=2) | Drug-Gene (p=2) |
+| Drug-Gene (p=2) | Drug-Gene (p=1) |
 
 ### Installation
 pip install -r requirements.txt
