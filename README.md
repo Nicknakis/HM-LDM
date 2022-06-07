@@ -28,7 +28,7 @@ Our Pytorch implementation uses the [pytorch_sparse](https://github.com/rusty1s/
 
 optional arguments:
 
-**--epochs**  &emsp;  number of epochs for training (default: 15K)
+**--epochs**  &emsp;  number of epochs for training (default: 10K)
 
 **--scaling_epochs**    &emsp;    number of epochs for learning initial scale for the random effects (default: 2K)
 
