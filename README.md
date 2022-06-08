@@ -55,5 +55,5 @@ The code has been primarily constructed and optimized for running in a GPU-enabl
 
 
 ### References
-N. Nakis, A. Celikkanat, and M. Mørup, [Hybrib-Membership-Latent-Distance-Model](https://arxiv.org/abs/2204.05885), Preprint.
+N. Nakis, A. Celikkanat, and M. Mørup, [Hybrib-Membership-Latent-Distance-Model](https://arxiv.org/pdf/2206.03463.pdf), Preprint.
 
