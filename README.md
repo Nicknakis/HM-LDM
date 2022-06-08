@@ -44,7 +44,7 @@ optional arguments:
 
 **--dataset** &emsp;  dataset to apply HM-LDM (default: grqc)
 
-**--sample_percentage** &emsp;  sample size network percentage, it should be less than 1 (default: 1)
+**--sample_percentage** &emsp;  sample size network percentage, it should be equal or less than 1 (default: 1)
 
 **--delta_sq** &emsp;  delta^2 hyperparameter controlling the volume of the simplex
 
