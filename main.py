@@ -116,7 +116,7 @@ if __name__ == "__main__":
                 
                                   
                 
-                loss=-model.LSM_likelihood_bias(epoch=epoch)/N
+                loss=-model.LSM_likelihood_bias(epoch=epoch)/sample_size
              
                 
          
