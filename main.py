@@ -50,7 +50,7 @@ parser.add_argument('--lr', type=float, default=0.1, metavar='N',
                     help='learning rate for the ADAM optimizer, for large values of delta 0.01 is more stable (default: 0.1)')
 
 parser.add_argument('--sample_percentage', type=float, default=1, metavar='N',
-                    help='Sample size network percentage, it should be less than 1 (default: 1)')
+                    help='Sample size network percentage, it should be equal or less than 1 (default: 1)')
 
 
 
