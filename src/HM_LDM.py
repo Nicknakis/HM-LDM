@@ -27,8 +27,7 @@ class LSM(nn.Module,Spectral_clustering_init):
         # initialization
         Spectral_clustering_init.__init__(self,num_of_eig=latent_dim,method='Normalized_sym')
         self.input_size=input_size
-        self.cluster_evolution=[]
-        self.mask_evolution=[]
+     
        
         self.bias=nn.Parameter(torch.randn(1,device=device))
         self.scaling_factor=nn.Parameter(torch.randn(1,device=device))
@@ -146,7 +145,7 @@ class LSM(nn.Module,Spectral_clustering_init):
     
     
         
-    #introduce the likelihood function containing the two extra biases gamma_i and alpha_j
+    #introduce the likelihood function 
     def LSM_likelihood_bias(self,epoch):
         '''
         Poisson log-likelihood ignoring the log(k!) constant
