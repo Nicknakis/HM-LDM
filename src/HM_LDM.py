@@ -156,11 +156,9 @@ class LSM(nn.Module,Spectral_clustering_init):
 
         if self.scaling:
             sample_idx,sparse_sample_i,sparse_sample_j=self.sample_network()
-            #mat=torch.exp(-self.reg_l*((self.latent_z[sample_idx].unsqueeze(1)-self.latent_z[sample_idx]+1e-06)**2).sum(-1)).detach()
             mat=torch.exp(torch.zeros(sample_idx.shape[0],sample_idx.shape[0])+1e-06)
 
             z_pdist1=0.5*torch.mm(torch.exp(self.gamma[sample_idx].unsqueeze(0)),(torch.mm((mat-torch.diag(torch.diagonal(mat))),torch.exp(self.gamma[sample_idx]).unsqueeze(-1))))
-    #take the sampled matrix indices in order to index gamma_i and alpha_j correctly and in agreement with the previous
             z_pdist2=(self.gamma[sparse_sample_i]+self.gamma[sparse_sample_j]).sum()
     
            
@@ -177,7 +175,6 @@ class LSM(nn.Module,Spectral_clustering_init):
                 mat=torch.exp(-self.reg_l*((torch.cdist(self.latent_z[sample_idx],self.latent_z[sample_idx],p=2))))
 
             z_pdist1=0.5*torch.mm(torch.exp(self.gamma[sample_idx].unsqueeze(0)),(torch.mm((mat-torch.diag(torch.diagonal(mat))),torch.exp(self.gamma[sample_idx]).unsqueeze(-1))))
-    #take the sampled matrix indices in order to index gamma_i and alpha_j correctly and in agreement with the previous
             if self.p==2:
                 z_pdist2=(-self.reg_l*((((self.latent_z[sparse_sample_i]-self.latent_z[sparse_sample_j]+1e-04)**2).sum(-1)))+self.gamma[sparse_sample_i]+self.gamma[sparse_sample_j]).sum()
             else:
